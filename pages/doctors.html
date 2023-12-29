@@ -31,10 +31,13 @@
 
     <select id="ratingFilter" onchange="filterByRating()">
       <option value="all">Filter by Rating</option>
+      <option value="5.0">5.0 and above</option>
+
       <option value="4.5">4.5 and above</option>
       <option value="4.0">4.0 and above</option>
+      <option value="3.0">3.0 and above</option>
+
     </select>
-    <div id="noDoctorsMessage"></div>
 
     <div id="generalTab" class="tab-content">
       <a href="./about-me.html">
@@ -120,6 +123,8 @@
           </div>
         </div></a
       >
+      <div id="nogeneralDoctorsMessage"></div>
+
     </div>
 
     <div id="pediatricianTab" class="tab-content">
@@ -142,6 +147,8 @@
           </div>
         </div></a
       >
+      <div id="nopediatricianDoctorsMessage"></div>
+
     </div>
 
     <div id="entTab" class="tab-content">
@@ -164,6 +171,8 @@
           </div>
         </div>
       </a>
+      <div id="noentDoctorsMessage"></div>
+
     </div>
 
     <div id="dentistTab" class="tab-content">
@@ -184,6 +193,8 @@
           </div>
         </div>
       </div>
+      <div id="nodentistDoctorsMessage"></div>
+
     </div>
 
     <div id="orthopeadicTab" class="tab-content">
@@ -226,6 +237,8 @@
           </div>
         </div></a
       >
+      <div id="noorthopeadicDoctorsMessage"></div>
+
     </div>
     <div class="bottom-navigation">
       <a href="../index.html">

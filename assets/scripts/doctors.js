@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function () {
+  openTab('general');
+});
+
 function openTab(tabName) {
   const tabs = ['general', 'pediatrician', 'ent', 'dentist', 'orthopeadic'];
   tabs.forEach(tab => {
@@ -9,16 +13,21 @@ function openTab(tabName) {
     }
   });
 }
-
-// the general shows by default
-document.addEventListener('DOMContentLoaded', function () {
-  openTab('general');
-});
+function getCurrentTab() {
+  const tabs = ['general', 'pediatrician', 'ent', 'dentist', 'orthopeadic'];
+  for (const tab of tabs) {
+    const tabContent = document.getElementById(tab + 'Tab');
+    if (tabContent.style.display === 'block') {
+      return tab;
+    }
+  }
+  return '';
+}
 
 function filterByRating() {
   const selectedRating = document.getElementById('ratingFilter').value;
   const doctorCards = document.querySelectorAll('.doctor-card');
-  let foundDoctors = false;
+  let foundDoctors = 0; // Initialize the counter
 
   doctorCards.forEach(card => {
     const ratingElement = card.querySelector('.doctor-content p:last-child');
@@ -26,23 +35,24 @@ function filterByRating() {
 
     if (selectedRating === 'all' || rating >= parseFloat(selectedRating)) {
       card.style.display = 'flex';
-      foundDoctors = true;
+      foundDoctors += 1; // Increment the counter when a doctor is found
     } else {
       card.style.display = 'none';
     }
   });
 
   // Get the element where you want to display the message
-  const messageElement = document.getElementById('noDoctorsMessage');
+  const currentTab = getCurrentTab();
+  const messageElement = document.getElementById(`no${currentTab}DoctorsMessage`);
 
-  if (!foundDoctors) {
+  if (foundDoctors === 0) {
     // Display a message when no doctors match the selected rating
-    messageElement.innerHTML = 'No doctors with this rating.';
+    messageElement.textContent = `No ${currentTab} doctors with this rating.`;
+    messageElement.style.display = 'block'; // Show the message element
   } else {
-    // Clear the message when doctors are found
-    messageElement.innerHTML = 'No doctors with this rating.';
+    // Hide the message when a doctor is found
+    messageElement.style.display = 'none';
   }
 }
-
 
 
