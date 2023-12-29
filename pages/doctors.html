@@ -12,12 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="../assets/style/style.css" />
     <link rel="stylesheet" href="../assets/style/doctor.css" />
   </head>
   <body>
     <header>
-        <h1>Welcome to the Doctors Page</h1>
+      <h1>Welcome to the Doctors Page</h1>
     </header>
     <div class="tabs example">
       <button class="tab" onclick="openTab('general')">General</button>
@@ -27,210 +27,233 @@
       <button class="tab" onclick="openTab('ent')">ENT</button>
       <button class="tab" onclick="openTab('dentist')">Dentist</button>
       <button class="tab" onclick="openTab('orthopeadic')">orthopeadic</button>
-
-
     </div>
 
     <select id="ratingFilter" onchange="filterByRating()">
-        <option value="">Filter by Rating</option>
-        <option value="">none</option>
-
-        <option value="4.5">4.5 and above</option>
-        <option value="4.0">4.0 and above</option>
-      </select>
+      <option value="all">Filter by Rating</option>
+      <option value="4.5">4.5 and above</option>
+      <option value="4.0">4.0 and above</option>
+    </select>
 
     <div id="generalTab" class="tab-content">
-     <a href="./about-me.html">
+      <a href="./about-me.html">
         <div class="doctor-card">
-            <div>
-              <img
-                src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
-                class="user-img"
-                alt="Doctor Image"
-              />
-            </div>
-            <div class="doctor-details">
-              <h3>Dr. John Doe</h3>
-              <div class="doctor-content">
-                <p> General</p>
-                
-                  <p> City Hospital</p>
-                  <p>Rating: 4.5</p>
-               
-              </div>
-            </div>
-    
-            
+          <div>
+            <img
+              src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
+              class="user-img"
+              alt="Doctor Image"
+            />
           </div>
-     </a>
-      
+          <div class="doctor-details">
+            <h3>Dr. John Doe</h3>
+            <div class="doctor-content">
+              <p>General</p>
 
-     <a href="./about-me.html"> <div class="doctor-card">
-        <div>
-          <img
-            src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
-            class="user-img"
-            alt="Doctor Image"
-          />
+              <p>City Hospital</p>
+              <p>Rating: 4.5</p>
+            </div>
+          </div>
         </div>
-        <div class="doctor-details">
-          <h3>Dr. John Doe</h3>
-          <div class="doctor-content">
-            <p> General</p>
-            
-              <p> City Hospital</p>
+      </a>
+
+      <a href="./about-me.html">
+        <div class="doctor-card">
+          <div>
+            <img
+              src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
+              class="user-img"
+              alt="Doctor Image"
+            />
+          </div>
+          <div class="doctor-details">
+            <h3>Dr. John Doe</h3>
+            <div class="doctor-content">
+              <p>General</p>
+
+              <p>City Hospital</p>
               <p>Rating: 4.0</p>
-           
+            </div>
           </div>
-        </div>
+        </div></a
+      >
 
-        
-      </div></a>
+      <a href="./about-me.html"
+        ><div class="doctor-card">
+          <div>
+            <img
+              src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
+              class="user-img"
+              alt="Doctor Image"
+            />
+          </div>
+          <div class="doctor-details">
+            <h3>Dr. John Doe</h3>
+            <div class="doctor-content">
+              <p>General</p>
 
-      <a href="./about-me.html"><div class="doctor-card">
-        <div>
-          <img
-            src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
-            class="user-img"
-            alt="Doctor Image"
-          />
-        </div>
-        <div class="doctor-details">
-          <h3>Dr. John Doe</h3>
-          <div class="doctor-content">
-            <p> General</p>
-            
-              <p> City Hospital</p>
+              <p>City Hospital</p>
               <p>Rating: 4.5</p>
-           
+            </div>
           </div>
-        </div>
+        </div></a
+      >
 
-        
-      </div></a>
+      <a href="./about-me.html"
+        ><div class="doctor-card">
+          <div>
+            <img
+              src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
+              class="user-img"
+              alt="Doctor Image"
+            />
+          </div>
+          <div class="doctor-details">
+            <h3>Dr. John Doe</h3>
+            <div class="doctor-content">
+              <p>General</p>
 
-
-      <a href="./about-me.html"><div class="doctor-card">
-        <div>
-          <img
-            src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
-            class="user-img"
-            alt="Doctor Image"
-          />
-        </div>
-        <div class="doctor-details">
-          <h3>Dr. John Doe</h3>
-          <div class="doctor-content">
-            <p> General</p>
-            
-              <p> City Hospital</p>
+              <p>City Hospital</p>
               <p>Rating: 4.5</p>
-           
+            </div>
           </div>
-        </div>
-
-        
-      </div></a>
+        </div></a
+      >
     </div>
 
     <div id="pediatricianTab" class="tab-content">
-     <a href="./about-me.html"> <div class="doctor-card">
-        <div>
-          <img src="https://s3-eu-west-1.amazonaws.com/intercare-web-public/wysiwyg-uploads%2F1580196666465-doctor.jpg"             class="user-img"
-          alt="Doctor Image" />
-        </div>
-        <div class="doctor-details">
-          <h3>Dr. Jane Smith</h3>
-          <p> Pediatrician</p>
-          <p> Children's Hospital</p>
-          <p>Rating: 4.8</p>
-        </div>
-      </div></a>
+      <a href="./about-me.html">
+        <div class="doctor-card">
+          <div>
+            <img
+              src="https://s3-eu-west-1.amazonaws.com/intercare-web-public/wysiwyg-uploads%2F1580196666465-doctor.jpg"
+              class="user-img"
+              alt="Doctor Image"
+            />
+          </div>
+          <div class="doctor-details">
+            <h3>Dr. Jane Smith</h3>
+            <div class="doctor-content">
+              <p>Pediatrician</p>
+              <p>Children's Hospital</p>
+              <p>Rating: 4.8</p>
+            </div>
+          </div>
+        </div></a
+      >
     </div>
 
     <div id="entTab" class="tab-content">
       <a href="./about-me.html">
         <div class="doctor-card">
-            <div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pzk-z0w128CGMXuoixmBWLIyzKg5xJ0jsw&usqp=CAU"  
-              class="user-img"
-    
-              alt="Doctor Image" />
-            </div>
-            <div class="doctor-details">
-              <h3>Dr. Sarah Johnson</h3>
-              <p> ENT</p>
-              <p> Ear & Throat Center</p>
-              <p>Rating: 4.2</p>
-            </div>
-          </div>
-      </a>
-    </div>
-
-
-
-    <div id="dentistTab" class="tab-content">
-        <div class="doctor-card">
           <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pzk-z0w128CGMXuoixmBWLIyzKg5xJ0jsw&usqp=CAU"  
-            class="user-img"
-  
-            alt="Doctor Image" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pzk-z0w128CGMXuoixmBWLIyzKg5xJ0jsw&usqp=CAU"
+              class="user-img"
+              alt="Doctor Image"
+            />
           </div>
           <div class="doctor-details">
             <h3>Dr. Sarah Johnson</h3>
-            <p> Dentist</p>
-            <p> Teeth</p>
+            <div class="doctor-content">
+              <p>ENT</p>
+              <p>Ear & Throat Center</p>
+              <p>Rating: 4.5</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div id="dentistTab" class="tab-content">
+      <div class="doctor-card">
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pzk-z0w128CGMXuoixmBWLIyzKg5xJ0jsw&usqp=CAU"
+            class="user-img"
+            alt="Doctor Image"
+          />
+        </div>
+        <div class="doctor-details">
+          <h3>Dr. Sarah Johnson</h3>
+          <div class="doctor-content">
+            <p>Dentist</p>
+            <p>Teeth</p>
             <p>Rating: 4.2</p>
           </div>
         </div>
       </div>
+    </div>
 
-
-      <div id="orthopeadicTab" class="tab-content">
-        <a href="./about-me.html"><div class="doctor-card">
-            <div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pzk-z0w128CGMXuoixmBWLIyzKg5xJ0jsw&usqp=CAU"  
+    <div id="orthopeadicTab" class="tab-content">
+      <a href="./about-me.html"
+        ><div class="doctor-card">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pzk-z0w128CGMXuoixmBWLIyzKg5xJ0jsw&usqp=CAU"
               class="user-img"
-    
-              alt="Doctor Image" />
-            </div>
-            <div class="doctor-details">
-              <h3>Dr. Sarah Johnson</h3>
-              <p> Orthopeadic</p>
-              <p> Teeth</p>
+              alt="Doctor Image"
+            />
+          </div>
+          <div class="doctor-details">
+            <h3>Dr. Sarah Johnson</h3>
+            <div class="doctor-content">
+              <p>Orthopeadic</p>
+              <p>Teeth</p>
               <p>Rating: 4.2</p>
             </div>
-          </div></a>
-      </div>
-      <div class="bottom-navigation">
-        <a href="../index.html">
-          <div class="nav-item">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
           </div>
-        </a>
-       <a href="./appointment.html">
+        </div></a
+      >
+
+      <a href="./about-me.html"
+      ><div class="doctor-card">
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pzk-z0w128CGMXuoixmBWLIyzKg5xJ0jsw&usqp=CAU"
+            class="user-img"
+            alt="Doctor Image"
+          />
+        </div>
+        <div class="doctor-details">
+          <h3>Dr. Sarah Johnson</h3>
+          <div class="doctor-content">
+            <p>Orthopeadic</p>
+            <p>Teeth</p>
+            <p>Rating: 3.2</p>
+          </div>
+        </div>
+      </div></a
+    >
+    </div>
+    <div class="bottom-navigation">
+      <a href="../index.html">
+        <div class="nav-item">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+      </a>
+      <a href="./appointment.html">
         <div class="nav-item">
           <i class="fas fa-user-md"></i>
           <span>Appointment</span>
         </div>
-       </a>
-        <a href="./doctors.html">
-          <div class="nav-item">
-            <i class="fas fa-user-md"></i>
-            <span>Doctors</span>
-          </div>
-        </a>
+      </a>
+      <a href="./doctors.html">
         <div class="nav-item">
-          <i class="fas fa-newspaper"></i>
-          <span>Articles</span>
+          <i class="fas fa-user-md"></i>
+          <span>Doctors</span>
         </div>
-        <div class="nav-item">
-          <i class="fas fa-user"></i>
-          <span>Profile</span>
-        </div>
+      </a>
+      <div class="nav-item">
+        <i class="fas fa-newspaper"></i>
+        <span>Articles</span>
       </div>
+      <div class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </div>
+    </div>
 
     <script src="../assets/scripts/doctors.js"></script>
   </body>

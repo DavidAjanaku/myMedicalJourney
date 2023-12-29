@@ -21,12 +21,16 @@ function filterByRating() {
 
   doctorCards.forEach(card => {
     const ratingElement = card.querySelector('.doctor-content p:last-child');
-    const rating = ratingElement ? parseFloat(ratingElement.innerText.split(': ')[1]) : 0;
+    const rating = ratingElement ? parseFloat(ratingElement.innerText.split(': ')[1]).toFixed(1) : 0;
 
-    if (!selectedRating || rating >= parseFloat(selectedRating)) {
+    console.log(`Rating for ${card.querySelector('h3').innerText}: ${rating}`);
+
+    if (selectedRating === 'all' || rating >= parseFloat(selectedRating)) {
       card.style.display = 'flex';
     } else {
       card.style.display = 'none';
     }
   });
 }
+
+
