@@ -1,0 +1,376 @@
+:root {
+    --circle-size: 30px;
+    --gray: rgb(155, 155, 155);
+    --gray2: rgb(245, 245, 245);
+    --gray3: rgb(131, 131, 131);
+
+    --color1: #101828;
+    --main-bg: #ededed;
+    --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  header {
+    padding: 15px 10px;
+    margin: 10px 0 0 0;
+  }
+
+  .user-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+
+
+  .user-imge{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+  
+  .user-circle {
+    /* background: rgb(206, 206, 206); */
+    /* padding: 5px;
+    height: var(--circle-size);
+    width: var(--circle-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; */
+  }
+  
+  .profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .profile-message{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .utility-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  
+  .text--gray {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 1rem;
+  }
+  
+  .text--bold {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 15px;
+    background-color: var(--gray2);
+    padding: 10px;
+  }
+
+  .fa-solid {
+    font-weight: 900;
+    color: gray;
+}
+  
+  .search-bar .icon {
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+    background: none;
+    outline: none;
+    height: 30px;
+  }
+  
+  .search-suggestions {
+    position: absolute;
+    top: 170px;
+    left: 15px;
+    right: 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+    height: 20vh;
+    padding: 10px 0 0 10px;
+  }
+  
+  .search-suggestion {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .search-suggestion:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .upcoming-appointment-details {
+    margin: 0 10px;
+  }
+  
+  .upcoming-appointment-details h2 {
+    padding: 0 0 12px 0;
+    font-size: 1.2rem;
+    color: var(--color1);
+  }
+
+  .appointment-details h4{
+        font-size: 1rem;
+  }
+  
+  .appointment-card {
+    background: linear-gradient(135deg, #98A3B3, #4d6bff);
+    color: white;
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+  
+  .doctor-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-icon i {
+    font-size: 30px;
+  }
+  
+  .doctor-name {
+    font-size: 18px;
+  }
+  
+  .specialization,
+  .hospital {
+    font-size: 14px;
+  }
+  
+  .appointment-details {
+    display: flex;
+    border-radius: 10px;
+  }
+  
+  .date-time {
+    font-size: .8rem;
+  }
+  
+  .appointment-detail-section {
+    flex: 1;
+  }
+  
+  .additional-info {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bottom-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    /* White background */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    color: #333;
+    /* Text color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Box shadow */
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .nav-item i {
+    font-size: 20px;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .nav-item span {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .specialty-card {
+    margin: 20px auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+  }
+  
+  .bottom {
+    padding: 20px 20px 80px 20px;
+  }
+  
+  .specialty-card h2 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color1);
+  }
+  
+  .specialty-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .specialty {
+    text-align: center;
+  }
+  
+  .specialty-icon {
+    font-size: 25px;
+    color: #92A3FD;
+    /* Adjust color as needed */
+    margin-bottom: 10px;
+    background: #dce1f8;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .specialty-name {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #333;
+  }
+  
+  .name {
+    border: 1px solid var(--gray);
+    padding: 5px;
+    margin: 8px 0;
+    border-radius: 20px;
+  }
+  
+  .overflow {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  
+  .example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .main-container {
+    position: fixed;
+    top: 150px;
+    left: 10px;
+    right: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    height: 80vh;
+    background-color: var(--main-bg);
+    z-index: 9;
+  }
+  
+  .doctor-detail {
+    background-color: white;
+    padding: 15px 20px;
+    margin: 10px 0 20px 0;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .doctor-detail p {
+    margin: 5px 0;
+  }
+  
+ 
+  
+
+
+  .doctor-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+  }
+
+  .doctor-flex{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .doctor-flexs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    color: var(--gray3);
+    
+  }
+  
+
+  .doctor-flex p {
+    font-size: .9rem;
+  }
+
+  .doctor-name{ 
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .upcoming-appointment{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="flex">
+        <div class="profile">
+          <div class="user-circle icon">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" class="user-img">
+          </div>
+          <div>
+            <p class="text text--gray">Welcome Back,</p>
+            <p class="text text--bold">Tash</p>
+          </div>
+        </div>
+        <div class="utility-icons">
+          <div class="icon">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="search-bar">
+        <div class="icon">
+          <i class="fa-solid fa-search"></i>
+        </div>
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <div class="search-suggestions-container">
+          <div class="search-suggestions" id="searchSuggestions"></div>
+        </div>
+        <div class="unique-doctor-details" id="doctorDetails">
+          <div class="unique-doctor-contents"></div>
+        </div>
+      </div>
+      
+    <div class="unique-doctor-details" id="uniqueDoctorDetails">
+        <div class="unique-doctor-contents">
+            
+        </div>
+    </div>
+
+    <div class="upcoming-appointment-details">
+      <h2>Upcoming Appointment</h2>
+
+      <div class="appointment-card">
+        <div class="doctor-info">
+          <div class="user-circle icon doctor-icon">
+            <img src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg=" class="user-imge">
+          </div>
+          <div class="upcoming-appointment">
+            <p class="doctor-name text text--bold">Dr. Steven William</p>
+            <div class="additional-info">
+              <p class="specialization text">Dentist</p>
+              <p class="hospital text">Royal Hospital</p>
+            </div>
+          </div>
+        </div>
+        <div class="appointment-details">
+          <div class="appointment-detail-section">
+            <h4 class="text text--bold">Date:</h4>
+            <p class="date-time text">January 15, 2024</p>
+          </div>
+          <div class="appointment-detail-section">
+            <h4 class="text text--bold">Time:</h4>
+            <p class="date-time text">3:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="specialty-card">
+      <h2>Doctor Specialties</h2>
+
+      <div class="specialty-details">
+        <div class="specialty">
+          <div class="specialty-icon">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <p class="specialty-name">General</p>
+        </div>
+
+        <div class="specialty">
+          <div class="specialty-icon">
+            <i class="fas fa-tooth"></i>
+          </div>
+          <p class="specialty-name">Dentist</p>
+        </div>
+
+        <!-- Repeat the structure for other specialties -->
+
+        <div class="specialty">
+          <div class="specialty-icon">
+            <i class="fas fa-biohazard"></i>
+          </div>
+          <p class="specialty-name">Intestine</p>
+        </div>
+
+        <div class="specialty">
+          <div class="specialty-icon">
+            <i class="fas fa-child"></i>
+          </div>
+          <p class="specialty-name">Pediatric</p>
+        </div>
+
+        <div class="specialty">
+          <div class="specialty-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <p class="specialty-name">Herbal</p>
+        </div>
+
+        <div class="specialty">
+          <div class="specialty-icon">
+            <i class="fas fa-bone"></i>
+          </div>
+          <p class="specialty-name">Orthology</p>
+        </div>
+
+        <div class="specialty">
+          <div class="specialty-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <p class="specialty-name">Cardiology</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="specialty-card bottom">
+      <h2>Top Doctors</h2>
+
+      <div class="specialty-details overflow example">
+        <div class="specialty">
+          <p class="specialty-name name">Open</p>
+        </div>
+
+        <div class="specialty">
+          <p class="specialty-name name">General</p>
+        </div>
+
+        <div class="specialty">
+          <p class="specialty-name name">Dentist</p>
+        </div>
+
+        <div class="specialty">
+          <p class="specialty-name name">Neurologist</p>
+        </div>
+        <div class="specialty">
+          <p class="specialty-name name">Neurologist</p>
+        </div>
+        <div class="specialty">
+          <p class="specialty-name name">Neurologist</p>
+        </div>
+        <div class="specialty">
+          <p class="specialty-name name">Neurologist</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+
+    <div class="bottom-navigation">
+      <div class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-user-md"></i>
+        <span>Appointment</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-user-md"></i>
+        <span>Doctors</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-newspaper"></i>
+        <span>Articles</span>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </div>
+    </div>
+  </body>
+  <script src="assets/scripts/search.js"></script>
+</html>
