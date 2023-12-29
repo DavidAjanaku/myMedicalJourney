@@ -35,7 +35,7 @@ function filterByRating() {
 
     if (selectedRating === 'all' || rating >= parseFloat(selectedRating)) {
       card.style.display = 'flex';
-      foundDoctors += 1; // Increment the counter when a doctor is found
+      foundDoctors += 1; 
     } else {
       card.style.display = 'none';
     }
