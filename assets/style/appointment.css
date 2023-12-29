@@ -5,6 +5,8 @@ body {
 .tabs {
     text-align: center;
     margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add this line for box shadow */
+
 }
 
 .tab {
@@ -13,24 +15,32 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
-    background-color: #f1f1f1;
+    background: none;
+    
 }
 
-.tab:hover {
-    background-color: #ddd;
+.tab.active {
+    border-bottom: 1px solid #4caf50;
+    border-radius: 0;
 }
 
 .tab-content {
     display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
 }
 
 .appointment-card {
-    border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px;
+    margin: 20px 10px;
     text-align: center;
     background: white;
     color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
 }
 
 .appointment-card img {
@@ -52,8 +62,24 @@ body {
 
 .appointment-details{
     text-align: left;
+    flex-direction: column;
+    gap: 5px;
+    
 }
 
+.appointment-details p{
+    color: #797979;
+}
+
+.appointment-buttons{
+    display: flex;
+    margin-top: 10px;
+}
+
+.appointment-buttons a{
+    width: 50%;
+    border-radius: 30px;
+}
 
 
 .button-container {
@@ -73,9 +99,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #ddd;
-}
+
 
 /* Style specific to the Reschedule button */
 .reschedule-button {

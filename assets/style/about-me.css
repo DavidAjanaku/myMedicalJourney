@@ -159,6 +159,8 @@
   z-index: 9;
 }
 
+
+
 .modal-content {
   background-color: #fff;
   padding: 20px;
@@ -167,11 +169,15 @@
   position: relative;
 }
 
+.modal-content h2{
+    margin: 0 0 20px 0;
+}
+
 .close {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: 40px;
   cursor: pointer;
 }
 
@@ -217,3 +223,63 @@ button:hover {
   cursor: pointer; 
   width: 100%;
 }
+
+
+.added-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+
+  .confirmationModals{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+
+  .confirmationModal{
+    position: absolute;
+    top: 30%;
+    left:10%;
+  }
+
+  .contents{
+    margin: 0 0 10px 0;
+  }
+
+  .patient-info,
+  .medical-history,
+  .doctor-notes {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .patient-info__title,
+  .medical-history__title,
+  .doctor-notes__title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .pb{
+    padding-bottom: 80px;
+
+  }

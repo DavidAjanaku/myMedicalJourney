@@ -22,8 +22,6 @@
     </div>
 
     <div id="upcomingTab" class="tab-content">
-      <!-- Upcoming Appointments Cards -->
-      <!-- Example Card: Replace with dynamic content based on your data -->
       <div class="appointment-card">
         <div class="appointment-header">
           <div>
@@ -38,15 +36,21 @@
             <p>Time: 3:00 PM</p>
           </div>
         </div>
-        <button onclick="rescheduleAppointment()">Reschedule</button>
-        <button onclick="viewDetails()">View Details</button>
+        <div class="appointment-buttons">
+          <a href="./scheduledappointment.html">
+            <button onclick="rescheduleAppointment()">Reschedule</button>
+          </a>
+          <a href="./scheduledappointment.html">
+            <button onclick="viewDetails()">View Details</button>
+          </a>
+        </div>
       </div>
 
       <div class="appointment-card">
         <div class="appointment-header">
           <div>
             <img
-              src="https://familydoctor.org/wp-content/uploads/2018/02/41808433_l.jpg"
+              src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
               alt="Doctor Image"
             />
           </div>
@@ -56,62 +60,80 @@
             <p>Time: 3:00 PM</p>
           </div>
         </div>
-        <button onclick="rescheduleAppointment()">Reschedule</button>
-        <button onclick="viewDetails()">View Details</button>
+        <div class="appointment-buttons">
+          <a href="./scheduledappointment.html">
+            <button onclick="rescheduleAppointment()">Reschedule</button>
+          </a>
+          <a href="./scheduledappointment.html">
+            <button onclick="viewDetails()">View Details</button>
+          </a>
+        </div>
       </div>
     </div>
 
     <div id="completedTab" class="tab-content">
-      <!-- Completed Appointments Cards -->
-      <!-- Example Card: Replace with dynamic content based on your data -->
       <div class="appointment-card">
         <div class="appointment-header">
-            <div>
-                <img src="https://familydoctor.org/wp-content/uploads/2018/02/41808433_l.jpg" alt="Doctor Image" />
-
-            </div>
-       <div class="appointment-details">
-        <h3>Dr. Jane Smith</h3>
-        <p>Date: December 5, 2023</p>
-        <p>Time: 2:30 PM</p>
-       </div>
+          <div>
+            <img
+              src="https://familydoctor.org/wp-content/uploads/2018/02/41808433_l.jpg"
+              alt="Doctor Image"
+            />
+          </div>
+          <div class="appointment-details">
+            <h3>Dr. Jane Smith</h3>
+            <p>Date: December 5, 2023</p>
+            <p>Time: 2:30 PM</p>
+          </div>
         </div>
-        <button onclick="viewDetails()">View Details</button>
+        <div class="appointment-buttons">
+          <a href="./completedappointment.html">
+            <button onclick="viewDetails()">View Details</button>
+          </a>
+        </div>
       </div>
     </div>
 
     <div id="historyTab" class="tab-content">
-      <!-- History/Canceled Appointments Cards -->
-      <!-- Example Card: Replace with dynamic content based on your data -->
       <div class="appointment-card">
         <div class="appointment-header">
-            <div>
-                <img src="https://familydoctor.org/wp-content/uploads/2018/02/41808433_l.jpg" alt="Doctor Image" />
-
-            </div>
-       <div class="appointment-details">
-        <h3>Dr. Michael Johnson</h3>
-        <p>Date: October 10, 2023</p>
-        <p>Time: 11:00 AM</p>
-       </div>
+          <div>
+            <img
+              src="https://familydoctor.org/wp-content/uploads/2018/02/41808433_l.jpg"
+              alt="Doctor Image"
+            />
+          </div>
+          <div class="appointment-details">
+            <h3>Dr. Michael Johnson</h3>
+            <p>Date: October 10, 2023</p>
+            <p>Time: 11:00 AM</p>
+          </div>
         </div>
-        <button onclick="viewDetails()">View Details</button>
+        <div class="appointment-buttons">
+          <a href="./history.html">
+            <button onclick="viewDetails()">View Details</button>
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="bottom-navigation">
-      <div class="nav-item">
-        <i class="fas fa-home"></i>
-        <span>Home</span>
-      </div>
+      <a href="../index.html">
+        <div class="nav-item">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+      </a>
       <div class="nav-item">
         <i class="fas fa-user-md"></i>
         <span>Appointment</span>
       </div>
-      <div class="nav-item">
-        <i class="fas fa-user-md"></i>
-        <span>Doctors</span>
-      </div>
+      <a href="./doctors.html">
+        <div class="nav-item">
+          <i class="fas fa-user-md"></i>
+          <span>Doctors</span>
+        </div>
+      </a>
       <div class="nav-item">
         <i class="fas fa-newspaper"></i>
         <span>Articles</span>

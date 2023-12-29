@@ -13,16 +13,7 @@ function closeModal() {
 }
 
 // Function to handle form submission
-function submitForm(event) {
-    event.preventDefault();
 
-    // Show the confirmation modal
-    const confirmationModal = document.getElementById('confirmationModal');
-    confirmationModal.style.display = 'flex';
-
-    // Close the appointment modal
-    closeModal();
-}
 
 // Function to close the confirmation modal
 function closeConfirmationModal() {
@@ -43,3 +34,34 @@ appointmentForm.addEventListener('submit', submitForm);
 // Attach the openModal function to the "Book Appointment" button
 const bookAppointmentBtn = document.getElementById('bookAppointmentBtn');
 bookAppointmentBtn.addEventListener('click', openModal);
+
+
+// appointment confirmation modal
+
+
+function submitForm() {
+    // Logic to submit the form (you can add your logic here)
+
+    // Close the appointment modal
+    closeModal();
+
+    // Show the "Appointment Confirmed" modal
+    showConfirmationModal();
+  }
+
+  // Function to show the confirmation modal
+  function showConfirmationModal() {
+    const confirmationModal = document.getElementById("confirmationModal");
+    confirmationModal.style.display = "block";
+
+    // Remove the modal after 3 seconds
+    setTimeout(() => {
+      confirmationModal.style.display = "none";
+    }, 3000);
+  }
+
+  // Function to close the appointment modal
+  function closeModal() {
+    const appointmentModal = document.getElementById("appointmentModal");
+    appointmentModal.style.display = "none";
+  }

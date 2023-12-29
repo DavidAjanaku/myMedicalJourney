@@ -30,20 +30,21 @@ const doctorsData = [
     ratings: 4.8,
     image: "alice_smith.jpg",
   },
-  // Add more doctor details as needed
+  
 ];
 
 const searchInput = document.getElementById("searchInput");
 const searchSuggestions = document.getElementById("searchSuggestions");
 const doctorDetailsContainer = document.getElementById("doctorDetails");
 
-// Display default search suggestions when the input field is clicked
+// displays  search suggestions when  input field is clicked.
 searchInput.addEventListener("click", function () {
-  // Show the default suggestions
+
+  // shows the default suggestions
   displayDefaultSuggestions();
 });
 
-// Function to display default suggestions
+// function is to display default suggestions
 function displayDefaultSuggestions() {
   const defaultSuggestionsHTML = doctorsData
     .reduce((acc, doctor) => {
@@ -61,22 +62,19 @@ function displayDefaultSuggestions() {
 
   searchSuggestions.innerHTML = defaultSuggestionsHTML;
 
-  // Show the suggestions
+  // this is to show the  suggestions
   searchSuggestions.style.display = "block";
 }
 
-// Display doctor details on specialty click
 searchSuggestions.addEventListener("click", function (event) {
   const selectedSpecialty = event.target.textContent.trim().toLowerCase();
   let filteredDoctors;
 
   if (selectedSpecialty === "general") {
-    // Filter for doctors under the 'General' specialty
     filteredDoctors = doctorsData.filter(
       (doctor) => doctor.specialty.toLowerCase() === "general"
     );
   } else {
-    // Filter for doctors with the selected specialty
     filteredDoctors = doctorsData.filter(
       (doctor) => doctor.specialty.toLowerCase() === selectedSpecialty
     );
@@ -107,7 +105,6 @@ searchSuggestions.addEventListener("click", function (event) {
     )
     .join("");
 
-  // Wrap doctor details in a main container
   const mainContainerHTML = `
     <div class="main-container">
       ${doctorDetailsHTML}
@@ -116,11 +113,9 @@ searchSuggestions.addEventListener("click", function (event) {
 
   doctorDetailsContainer.innerHTML = mainContainerHTML;
 
-  // Hide the suggestions after a selection
   searchSuggestions.style.display = "none";
 });
 
-// Update suggestions based on search input
 searchInput.addEventListener("input", function () {
   const searchTerm = this.value.toLowerCase();
   const filteredSpecialties = doctorsData
@@ -146,7 +141,7 @@ searchInput.addEventListener("input", function () {
   searchSuggestions.style.display = "block";
 });
 
-// Close suggestions when clicking outside the search input, suggestions, and doctor details
+// cloes the suggestions when clicking outside the search input, suggestions, and doctor details
 document.addEventListener("click", function (event) {
   const isClickInsideSearch = searchInput.contains(event.target);
   const isClickInsideSuggestions = searchSuggestions.contains(event.target);
@@ -159,8 +154,7 @@ document.addEventListener("click", function (event) {
     !isClickInsideSuggestions &&
     !isClickInsideDoctorDetails
   ) {
-    // Clicked outside, hide the suggestions and doctor details
     searchSuggestions.style.display = "none";
-    doctorDetailsContainer.innerHTML = ""; // Clear doctor details
+    doctorDetailsContainer.innerHTML = ""; 
   }
 });
