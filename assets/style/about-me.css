@@ -1,15 +1,18 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .header {
-  background-color: #3498db;
-  color: #fff;
   padding: 10px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.header h1{
+    font-size: 1.3rem;
+
 }
 
 .doctor-profile {
@@ -17,7 +20,9 @@ body {
   justify-content: space-around;
   padding: 20px;
 
-  background-color: #f0f0f0;
+  background-color: #e4e9ff;
+  margin: 0 20px;
+  border-radius: 20px;
 }
 
 .doctor-profile__image {
@@ -35,7 +40,7 @@ body {
 }
 
 .doctor-info__name {
-  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .card-container {
@@ -57,6 +62,11 @@ body {
 
 .card__title {
   margin-bottom: 5px;
+  color: #92a3fd;
+}
+
+.card__value {
+  color: #778293;
 }
 
 .working-info {
@@ -90,6 +100,8 @@ body {
 .about-me__content {
   font-size: 1rem;
   color: #555;
+  line-height: 22px;
+  font-weight: 100;
 }
 
 .reviews {
@@ -98,14 +110,15 @@ body {
 }
 
 .review {
-  border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
 
 .review__image {
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -116,18 +129,20 @@ body {
   margin-bottom: 5px;
 }
 
-button {
-  background-color: #007bff; /* Blue color, you can change it */
-  color: #fff; /* White text color */
-  padding: 10px 20px; /* Padding for better appearance */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Add pointer cursor on hover */
+.button {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px;
+  font-size: 16px; 
+  cursor: pointer; 
+  width: 100%;
+  margin: 0 20px;
 }
 
-button:hover {
-  background-color: #0056b3; /* Darker blue color on hover, you can change it */
+.button:hover {
+  background-color: #0056b3;
 }
 
 .modal {
@@ -141,6 +156,7 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  z-index: 9;
 }
 
 .modal-content {
@@ -177,7 +193,7 @@ textarea {
   border-radius: 4px;
 }
 
-button {
+.button {
   padding: 10px;
   background-color: #007bff;
   color: #fff;
@@ -188,4 +204,16 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+
+.cta{
+    background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px;
+  font-size: 16px; 
+  cursor: pointer; 
+  width: 100%;
 }

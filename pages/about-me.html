@@ -16,7 +16,15 @@
   </head>
   <body>
     <div class="header">
-      <h1>Doctor Profile</h1>
+      <div class="header-icons">
+        <i class="fas fa-arrow-left"></i>
+        <!-- Back button icon -->
+      </div>
+      <h1>Dr. John Doe</h1>
+      <div class="header-icons">
+        <i class="far fa-heart"></i>
+        <!-- Love icon -->
+      </div>
     </div>
 
     <div class="doctor-profile">
@@ -49,6 +57,18 @@
       </div>
     </div>
 
+    <div class="about-me">
+      <h2 class="about-me__title">About Me</h2>
+      <p class="about-me__content">
+        Dr. John Doe is a dedicated and experienced general practitioner with a
+        passion for providing high-quality healthcare to patients. With a focus
+        on patient well-being, Dr. Doe strives to create a comfortable and
+        supportive environment for all individuals seeking medical assistance.
+        Graduating from the prestigious Medical University, Dr. Doe brings a
+        wealth of knowledge and expertise to the medical field.
+      </p>
+    </div>
+
     <div class="working-info">
       <h2 class="working-info__title">Working Information</h2>
 
@@ -62,24 +82,16 @@
       </div>
     </div>
 
-    <div class="about-me">
-      <h2 class="about-me__title">About Me</h2>
-      <p class="about-me__content">
-        Dr. John Doe is a dedicated and experienced general practitioner with a
-        passion for providing high-quality healthcare to patients. With a focus
-        on patient well-being, Dr. Doe strives to create a comfortable and
-        supportive environment for all individuals seeking medical assistance.
-        Graduating from the prestigious Medical University, Dr. Doe brings a
-        wealth of knowledge and expertise to the medical field.
-      </p>
-    </div>
-
     <div class="reviews">
       <h2 class="reviews__title">Reviews</h2>
 
       <div class="review">
         <div class="review__info">
-          <img class="review__image" src="patient1.jpg" alt="Patient 1" />
+          <img
+            class="review__image"
+            src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c21pbGluZyUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Patient 1"
+          />
           <p class="review__patient">Patient 1</p>
         </div>
         <p class="review__text">
@@ -90,7 +102,11 @@
 
       <div class="review">
         <div class="review__info">
-          <img class="review__image" src="patient2.jpg" alt="Patient 2" />
+          <img
+            class="review__image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTCgU5pWcCSVpVysRJaGsqAn3rN72QiuBFbBv472xebyfIhcVJW6GtU4quOCFRX9r3Htw&usqp=CAU"
+            alt="Patient 2"
+          />
           <p class="review__patient">Patient 2</p>
         </div>
         <p class="review__text">Great experience. Highly recommended.</p>
@@ -103,38 +119,44 @@
         <span class="close" onclick="closeModal()">&times;</span>
         <h2>Book Appointment</h2>
         <form id="appointmentForm">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required />
-          
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required />
-          
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-          
-            <label for="problems">Problems:</label>
-            <textarea id="problems" name="problems" rows="4" required></textarea>
-          
-            <button type="button" onclick="submitForm()">Submit</button>
-          </form>
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">others</option>
+
+          </select>
+
+          <label for="problems">Problems:</label>
+          <textarea id="problems" name="problems" rows="4" required></textarea>
+
+          <button type="button" class="cta" onclick="submitForm()">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
 
-
     <div class="modal" id="confirmationModal">
-        <div class="modal-content">
-          <span class="close" onclick="closeConfirmationModal()">&times;</span>
-          <h2>Appointment Confirmed</h2>
-          <p>Your appointment with Dr. John Doe on Wednesday, August 17, 2023 at 11:00 AM</p>
-          <button onclick="openBookAppointmentModal()">Book Appointment</button>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closeConfirmationModal()">&times;</span>
+        <h2>Appointment Confirmed</h2>
+        <p>
+          Your appointment with Dr. John Doe on Wednesday, August 17, 2023 at
+          11:00 AM
+        </p>
+        <button onclick="openBookAppointmentModal()">Book Appointment</button>
       </div>
+    </div>
 
     <div class="bottom-navigation">
-      <button id="bookAppointmentBtn">Book Appointment</button>
+      <button id="bookAppointmentBtn" class="button">Book Appointment</button>
     </div>
   </body>
   <script src="../assets/scripts/patient-modal.js"></script>
