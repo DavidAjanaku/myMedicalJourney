@@ -1,4 +1,3 @@
-// Script for handling tab switching and filtering by rating
 function openTab(tabName) {
   const tabs = ['general', 'pediatrician', 'ent', 'dentist', 'orthopeadic'];
   tabs.forEach(tab => {
@@ -10,6 +9,11 @@ function openTab(tabName) {
     }
   });
 }
+
+// the general shows by default
+document.addEventListener('DOMContentLoaded', function () {
+  openTab('general');
+});
 
 function filterByRating() {
   const selectedRating = document.getElementById('ratingFilter').value;
@@ -26,4 +30,3 @@ function filterByRating() {
     }
   });
 }
-
